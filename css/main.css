@@ -127,6 +127,7 @@ nav ul {
   padding: 0;
   width: 100%;
   border-bottom: 3px solid #f4f4f4;
+  padding-top: 1%;
 }
 
 nav ul li {
@@ -145,7 +146,8 @@ h2 {
   color: #f4f4f4;
   font-family: 'MyWebFont', Fallback, sans-serif;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  padding-top: 1%;
   -webkit-animation-name: sua;
           animation-name: sua;
   -webkit-animation-duration: 4s;
@@ -266,7 +268,7 @@ h2 {
 }
 
 .example h2 {
-  padding: 1%;
+  padding-top: 1%;
 }
 
 .example iframe {
@@ -290,7 +292,7 @@ h2 {
 }
 
 .ending h2 {
-  padding: 1%;
+  padding-top: 1%;
 }
 
 footer {
