@@ -162,6 +162,10 @@ h2 {
   grid-area: w;
 }
 
+.welcome h2 {
+  font-size: 1.2em;
+}
+
 .intro {
   grid-area: intro;
 }
@@ -181,6 +185,7 @@ h2 {
   font-family: 'MyWebFont', Fallback, sans-serif;
   color: #f4f4f4;
   text-align: center;
+  font-size: 1.2em;
 }
 
 .dados .log {
@@ -189,11 +194,16 @@ h2 {
   height: 30%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
+  -ms-grid-columns: repeat(6, 1fr);
       grid-template-columns: repeat(6, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: "j j j j j j" "lu . . . . ." "usi usi usi usi usi usi " "ls . . . . ." "usp usp usp usp usp usp " "s s s cad cad cad";
+      grid-template-areas: "j j j j j j"
+ "lu . . . . ."
+ "usi usi usi usi usi usi "
+ "ls . . . . ."
+ "usp usp usp usp usp usp "
+ "s s s cad cad cad";
 }
 
 .dados #userIn {
@@ -312,12 +322,15 @@ footer p {
   #grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
+    -ms-grid-columns: repeat(12, 1fr);
         grid-template-columns: repeat(12, 1fr);
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     grid-gap: 30px;
-        grid-template-areas: "w w w w w w w w w w w w " "intro intro intro intro intro intro intro intro dados dados dados dados " "example example example example example example example example example example example example " "ending ending ending ending ending ending ending ending ending ending ending ending ";
+        grid-template-areas: "w w w w w w w w w w w w "
+ "intro intro intro intro intro intro intro intro dados dados dados dados "
+ "example example example example example example example example example example example example "
+ "ending ending ending ending ending ending ending ending ending ending ending ending ";
   }
   .menu {
     -ms-flex-preferred-size: 5%;
@@ -386,10 +399,13 @@ footer p {
   #grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
+    -ms-grid-columns: repeat(12, 1fr);
         grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
-        grid-template-areas: ". w w w w w w w w w w . " ". intro intro intro intro intro intro . dados dados dados . " ". example example example example example example example example example example . " ". ending ending ending ending ending ending ending ending ending ending . ";
+        grid-template-areas: ". w w w w w w w w w w . "
+ ". intro intro intro intro intro intro . dados dados dados . "
+ ". example example example example example example example example example example . "
+ ". ending ending ending ending ending ending ending ending ending ending . ";
   }
   #grid .welcome {
     padding-right: 3%;
