@@ -97,10 +97,11 @@ $colors:
     width:100%;
     display:flex;
     border-bottom: solid #f4f4f4 3px;
+    align-items: center;
 }
 h1
 {
-    flex:70%;
+    flex:60%;
     text-align: center;
     color:#f4f4f4;
     font-size:1.7em;
@@ -109,12 +110,12 @@ h1
 header
 {
     width: 100%;
-    font-size:20px;
+    font-size:1.2em;
     grid-area:h;
 }
 #logo
 {
-    flex:30%;
+    flex:40%;
     width:4em;
     height:4em;
     max-width: 5em;
@@ -256,6 +257,10 @@ box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
 }
 .example
 {
+    h2
+    {
+        padding:1%;
+    }
     grid-area:example;
     color:#f4f4f4;
     font-family: 'MyWebFont', Fallback, sans-serif;
@@ -268,6 +273,7 @@ box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
     }
     p
     {
+        padding:1%;
         border-radius: 15px;
         border: 10px solid rgba(255, 255, 255, .1);
         text-align: center;
@@ -280,6 +286,10 @@ box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
     color:#f4f4f4;
     font-size:1.2em;
     text-align: center;
+    h2
+    {
+        padding:1%;
+    }
 }
 
 //Footer
