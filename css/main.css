@@ -105,9 +105,9 @@ header {
   -webkit-box-flex: 30%;
       -ms-flex: 30%;
           flex: 30%;
-  width: 65px;
-  height: 65px;
-  max-width: 100px;
+  width: 4em;
+  height: 4em;
+  max-width: 4em;
 }
 
 nav {
