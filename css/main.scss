@@ -70,6 +70,7 @@ $colors:
         height:100%;
         width:45%;
         align-items: center;
+        top:inherit;
     }
     #menu
     {
@@ -112,6 +113,7 @@ header
     width: 100%;
     font-size:1.2em;
     grid-area:h;
+    margin-bottom: 5%;
 }
 #logo
 {
@@ -298,7 +300,7 @@ h2
     color:#f4f4f4;
     font-family: 'MyWebFont', Fallback, sans-serif;
     text-align: center;
-    padding-top: 1%;
+    padding-top: 2%;
     animation-name: sua;
     border-bottom:3px solid #f4f4f4;
     border-radius: 15px;
