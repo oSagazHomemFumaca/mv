@@ -105,7 +105,8 @@ header {
   -webkit-box-flex: 30%;
       -ms-flex: 30%;
           flex: 30%;
-  width: 70px;
+  width: 65px;
+  height: 65px;
   max-width: 100px;
 }
 
