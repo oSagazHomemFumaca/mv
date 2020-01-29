@@ -1,0 +1,399 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.ttf") format("truetype"), url("webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.back {
+  background-image: url("../images/back1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 60%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu {
+  cursor: pointer;
+  background-image: url("../images/icon.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  width: 50%;
+  max-width: 50%;
+}
+
+.menu div {
+  display: none;
+}
+
+.openMenu .menuCont {
+  position: absolute;
+  height: 100%;
+  width: 45%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.openMenu #menu {
+  width: 97%;
+  max-width: 97%;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  background-image: none;
+  display: block;
+}
+
+.openMenu div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 97%;
+  height: 5%;
+  color: #f4f4f4;
+  background-color: #393e42;
+  border-bottom: 3px solid #f4f4f4;
+}
+
+.headerCont {
+  font-family: 'MyWebFont', Fallback, sans-serif;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: solid #f4f4f4 3px;
+}
+
+h1 {
+  -webkit-box-flex: 80%;
+      -ms-flex: 80%;
+          flex: 80%;
+  text-align: center;
+  color: #f4f4f4;
+  font-size: 1.7em;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  font-size: 20px;
+  grid-area: h;
+}
+
+#logo {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+  width: 80px;
+  height: 80px;
+  max-width: 100px;
+}
+
+nav {
+  font-family: 'MyWebFont', Fallback, sans-serif;
+  font-size: 1.1em;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-bottom: 3px solid #f4f4f4;
+}
+
+nav ul li {
+  color: #f4f4f4;
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  margin: 0;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h2 {
+  color: #f4f4f4;
+  font-family: 'MyWebFont', Fallback, sans-serif;
+  text-align: center;
+  font-size: 1.2em;
+  -webkit-animation-name: sua;
+          animation-name: sua;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  border-bottom: 3px solid #f4f4f4;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 15px 96px 0px rgba(255, 252, 255, 0.84);
+  box-shadow: 0px 15px 96px 0px rgba(255, 252, 255, 0.84);
+}
+
+.welcome {
+  grid-area: w;
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.intro video {
+  width: 90%;
+  border-radius: 15px;
+  margin-bottom: 3%;
+  border: 10px solid rgba(255, 255, 255, 0.1);
+}
+
+.dados {
+  grid-area: dados;
+}
+
+.dados h3 {
+  font-family: 'MyWebFont', Fallback, sans-serif;
+  color: #f4f4f4;
+  text-align: center;
+}
+
+.dados .log {
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  height: 30%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "j j j j j j" "lu . . . . ." "usi usi usi usi usi usi " "ls . . . . ." "usp usp usp usp usp usp " "s s s cad cad cad";
+}
+
+.dados #userIn {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: usi;
+}
+
+.dados #userP {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: usp;
+}
+
+.dados #submit {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: s;
+  margin: 4%;
+  border-radius: 15px;
+}
+
+.dados #cadastar {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-area: cad;
+  margin: 4%;
+  border-radius: 15px;
+}
+
+.dados #junte {
+  margin: 0;
+  margin-top: 1%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: j;
+  border-bottom: 2px double #f4f4f4;
+  text-align: center;
+}
+
+.dados #usuario {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: lu;
+}
+
+.dados #senha {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: ls;
+}
+
+.dados label {
+  color: #f4f4f4;
+  margin-left: 1%;
+}
+
+.dados input {
+  margin: 4%;
+}
+
+.example {
+  grid-area: example;
+  color: #f4f4f4;
+  font-family: 'MyWebFont', Fallback, sans-serif;
+  font-size: 1.2em;
+}
+
+.example iframe {
+  width: 100%;
+  height: 250px;
+}
+
+.example p {
+  border-radius: 15px;
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.ending {
+  grid-area: ending;
+  font-family: 'MyWebFont', Fallback, sans-serif;
+  color: #f4f4f4;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: gray;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  margin-right: 12%;
+}
+
+@media (min-device-width: 760px) {
+  #grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 30px;
+        grid-template-areas: "w w w w w w w w w w w w " "intro intro intro intro intro intro intro intro dados dados dados dados " "example example example example example example example example example example example example " "ending ending ending ending ending ending ending ending ending ending ending ending ";
+  }
+  .menu {
+    -ms-flex-preferred-size: 5%;
+        flex-basis: 5%;
+  }
+  .intro h2 {
+    text-align: center;
+  }
+  .example .bigScr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+  }
+  .example h2 {
+    margin-top: 0;
+  }
+  .example iframe {
+    width: 60%;
+    height: 200px;
+    margin-right: 3%;
+    margin-top: 2.5%;
+  }
+  .example p {
+    padding-top: 6%;
+    width: 50%;
+    text-align: center;
+  }
+  .dados {
+    height: 100%;
+  }
+  .dados .log {
+    height: 92.5%;
+  }
+}
+
+@media (min-device-width: 1080px) {
+  .back {
+    display: none;
+  }
+  body {
+    background-attachment: fixed;
+    background-image: url("../images/back1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+  .menu {
+    -ms-flex-preferred-size: 3%;
+        flex-basis: 3%;
+  }
+  h2 {
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 1.4em;
+  }
+  .example h2 {
+    padding-right: 2%;
+  }
+  #grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+        grid-template-areas: ". w w w w w w w w w w . " ". intro intro intro intro intro intro . dados dados dados . " ". example example example example example example example example example example . " ". ending ending ending ending ending ending ending ending ending ending . ";
+  }
+  #grid .welcome {
+    padding-right: 3%;
+    font-size: 1.7em;
+  }
+  #grid .dados {
+    height: 100%;
+  }
+  #grid .dados .log {
+    height: 93.6%;
+  }
+  #grid iframe {
+    width: 70%;
+    height: 450px;
+  }
+  .ending p {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
