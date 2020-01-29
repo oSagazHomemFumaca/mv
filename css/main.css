@@ -142,11 +142,11 @@ nav ul li {
           align-items: center;
 }
 
-h2 {
+.welcome {
+  grid-area: w;
   color: #f4f4f4;
   font-family: 'MyWebFont', Fallback, sans-serif;
   text-align: center;
-  font-size: 1.3em;
   padding-top: 1%;
   -webkit-animation-name: sua;
           animation-name: sua;
@@ -154,16 +154,9 @@ h2 {
           animation-duration: 4s;
   border-bottom: 3px solid #f4f4f4;
   border-radius: 15px;
+  font-size: 1.3em;
   -webkit-box-shadow: 0px 15px 96px 0px rgba(255, 252, 255, 0.84);
   box-shadow: 0px 15px 96px 0px rgba(255, 252, 255, 0.84);
-}
-
-.welcome {
-  grid-area: w;
-}
-
-.welcome h2 {
-  font-size: 1.2em;
 }
 
 .intro {
@@ -171,7 +164,7 @@ h2 {
 }
 
 .intro video {
-  width: 90%;
+  width: 95%;
   border-radius: 15px;
   margin-bottom: 3%;
   border: 10px solid rgba(255, 255, 255, 0.1);
@@ -185,7 +178,7 @@ h2 {
   font-family: 'MyWebFont', Fallback, sans-serif;
   color: #f4f4f4;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .dados .log {
@@ -194,16 +187,11 @@ h2 {
   height: 30%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: "j j j j j j"
- "lu . . . . ."
- "usi usi usi usi usi usi "
- "ls . . . . ."
- "usp usp usp usp usp usp "
- "s s s cad cad cad";
+      grid-template-areas: "j j j j j j" "lu . . . . ." "usi usi usi usi usi usi " "ls . . . . ." "usp usp usp usp usp usp " "s s s cad cad cad";
 }
 
 .dados #userIn {
@@ -277,10 +265,6 @@ h2 {
   font-size: 1.2em;
 }
 
-.example h2 {
-  padding-top: 1%;
-}
-
 .example iframe {
   width: 100%;
   height: 250px;
@@ -301,10 +285,6 @@ h2 {
   text-align: center;
 }
 
-.ending h2 {
-  padding-top: 1%;
-}
-
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,19 +298,30 @@ footer p {
   margin-right: 12%;
 }
 
+h2 {
+  color: #f4f4f4;
+  font-family: 'MyWebFont', Fallback, sans-serif;
+  text-align: center;
+  padding-top: 1%;
+  -webkit-animation-name: sua;
+          animation-name: sua;
+  border-bottom: 3px solid #f4f4f4;
+  border-radius: 15px;
+  font-size: 1.1em;
+  -webkit-box-shadow: 0px 15px 96px 0px rgba(255, 252, 255, 0.84);
+  box-shadow: 0px 15px 96px 0px rgba(255, 252, 255, 0.84);
+}
+
 @media (min-device-width: 760px) {
   #grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: repeat(12, 1fr);
+    -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     grid-gap: 30px;
-        grid-template-areas: "w w w w w w w w w w w w "
- "intro intro intro intro intro intro intro intro dados dados dados dados "
- "example example example example example example example example example example example example "
- "ending ending ending ending ending ending ending ending ending ending ending ending ";
+        grid-template-areas: "w w w w w w w w w w w w " "intro intro intro intro intro intro intro intro dados dados dados dados " "example example example example example example example example example example example example " "ending ending ending ending ending ending ending ending ending ending ending ending ";
   }
   .menu {
     -ms-flex-preferred-size: 5%;
@@ -338,6 +329,9 @@ footer p {
   }
   .intro h2 {
     text-align: center;
+  }
+  .intro video {
+    margin: 0;
   }
   .example .bigScr {
     display: -webkit-box;
@@ -353,14 +347,16 @@ footer p {
   }
   .example iframe {
     width: 60%;
-    height: 200px;
+    height: inherit;
     margin-right: 3%;
-    margin-top: 2.5%;
+    margin-top: 0;
+    border-radius: 15px;
   }
   .example p {
-    padding-top: 6%;
+    padding-top: 0;
     width: 50%;
     text-align: center;
+    margin: 0;
   }
   .dados {
     height: 100%;
@@ -399,13 +395,10 @@ footer p {
   #grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: repeat(12, 1fr);
+    -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
-        grid-template-areas: ". w w w w w w w w w w . "
- ". intro intro intro intro intro intro . dados dados dados . "
- ". example example example example example example example example example example . "
- ". ending ending ending ending ending ending ending ending ending ending . ";
+        grid-template-areas: ". w w w w w w w w w w . " ". intro intro intro intro intro intro . dados dados dados . " ". example example example example example example example example example example . " ". ending ending ending ending ending ending ending ending ending ending . ";
   }
   #grid .welcome {
     padding-right: 3%;

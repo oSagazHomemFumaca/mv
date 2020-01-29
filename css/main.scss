@@ -147,39 +147,30 @@ ul
 }
 }
 
-h2
-{
-    color:#f4f4f4;
-    font-family: 'MyWebFont', Fallback, sans-serif;
-    text-align: center;
-    font-size: 1.3em;
-    padding-top: 1%;
-    animation-name: sua;
-    animation-duration: 4s;
-    border-bottom:3px solid #f4f4f4;
-    border-radius: 15px;
-
-    -webkit-box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
--moz-box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
-box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
-}
-
 //MAIN
 //sec intro video
 .welcome
 {
     grid-area: w;
-    h2
-    {
-        font-size: 1.2em;
-    }
+    color:#f4f4f4;
+    font-family: 'MyWebFont', Fallback, sans-serif;
+    text-align: center;
+    padding-top: 1%;
+    animation-name: sua;
+    animation-duration: 4s;
+    border-bottom:3px solid #f4f4f4;
+    border-radius: 15px;
+    font-size: 1.3em;
+    -webkit-box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
+    -moz-box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
+    box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
 }
 .intro
 {
     grid-area: intro;
     video
     {
-        width:90%;
+        width:95%;
         border-radius: 15px;
         margin-bottom: 3%;  
         border: 10px solid rgba(255, 255, 255, .1);
@@ -194,7 +185,7 @@ box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
         font-family: 'MyWebFont', Fallback, sans-serif;
         color:#f4f4f4;
         text-align: center;
-        font-size:1.2em;
+        font-size:1.3em;
     }
     .log
     {
@@ -263,10 +254,6 @@ box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
 }
 .example
 {
-    h2
-    {
-        padding-top:1%;
-    }
     grid-area:example;
     color:#f4f4f4;
     font-family: 'MyWebFont', Fallback, sans-serif;
@@ -292,10 +279,6 @@ box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
     color:#f4f4f4;
     font-size:1.2em;
     text-align: center;
-    h2
-    {
-        padding-top:1%;
-    }
 }
 
 //Footer
@@ -310,7 +293,21 @@ footer
         margin-right: 12%;
     }
 }
+h2
+{
+    color:#f4f4f4;
+    font-family: 'MyWebFont', Fallback, sans-serif;
+    text-align: center;
+    padding-top: 1%;
+    animation-name: sua;
+    border-bottom:3px solid #f4f4f4;
+    border-radius: 15px;
+    font-size: 1.1em;
 
+    -webkit-box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
+-moz-box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
+box-shadow: 0px 15px 96px 0px rgba(255,252,255,0.84);
+}
 //Tablets
 @media(min-device-width: 760px)
 {
@@ -337,6 +334,10 @@ footer
         {
             text-align: center;
         }
+        video
+        {
+            margin:0;
+        }
     }
     .example
     {
@@ -350,15 +351,17 @@ footer
         iframe
         {
             width:60%;
-            height:200px;
+            height:inherit;
             margin-right: 3%;
-            margin-top:2.5%;
+            margin-top:0;
+            border-radius: 15px;
         }
         p
         {
-            padding-top:6%;
+            padding-top:0;
             width:50%;
             text-align: center;
+            margin:0;
         }
     }
 
